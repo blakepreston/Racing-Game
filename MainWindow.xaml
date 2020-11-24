@@ -1,0 +1,26 @@
+﻿<Window x:Class="racingGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:racingGame"
+        mc:Ignorable="d"
+        Title="Racing Game" Height="800" Width="450">
+    <Canvas Background="Gray" Name="myCanvas" Focusable="True" KeyDown="onKeyDown" KeyUp="onKeyUp">
+
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="222" Canvas.Top="163"/>
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="222" Canvas.Top="325"/>
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="222" Canvas.Top="491"/>
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="222" Canvas.Top="663"/>
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="222" Canvas.Top="10"/>
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="222" Canvas.Top="-142"/>
+
+        <Rectangle Height="119" Width="58" Fill="Blue" Tag="Car" Canvas.Left="47" Canvas.Top="70"/>
+        <Rectangle Height="112" Width="56" Fill="Purple" Tag="Car" Canvas.Left="315" Canvas.Top="145"/>
+        <Rectangle Height="112" Width="56" Fill="Purple" Tag="Car" Canvas.Left="113" Canvas.Top="375"/>
+
+        <Rectangle Height="101" Width="51" Fill="Yellow" Name="player" Canvas.Left="191" Canvas.Top="602"/>
+
+        <Label Name="scoreText" Content="Survived: 00 Seconds" FontSize="18" FontWeight="Bold" Height="35" Width="432"/>
+    </Canvas>
+</Window>
